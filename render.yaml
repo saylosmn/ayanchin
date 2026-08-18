@@ -1,0 +1,25 @@
+# Render Blueprint. Deploying from this file fills in the build/start
+# commands automatically; you only supply the secret values.
+services:
+  - type: web
+    name: ayanchin-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements-prod.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: DB_NAME
+        value: ayanchin
+      - key: JWT_SECRET
+        generateValue: true   # Render generates a strong random value
+      - key: MONGO_URL
+        sync: false           # you paste this in the dashboard
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
