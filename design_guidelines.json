@@ -1,0 +1,145 @@
+{
+  "theme": "dark",
+  "typography": {
+    "headings": {
+      "family": "Cormorant Garamond",
+      "weights": ["300", "400", "600"],
+      "class": "font-serif tracking-tight",
+      "description": "Elegant, cinematic serif for premium restaurant feel. Use for all H1, H2, H3."
+    },
+    "body": {
+      "family": "Manrope",
+      "weights": ["300", "400"],
+      "class": "font-sans leading-relaxed tracking-wide",
+      "description": "Clean, highly readable modern sans-serif to contrast the classic headings."
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#0A0908",
+      "secondary": "#171513",
+      "tertiary": "#24201C"
+    },
+    "text": {
+      "primary": "#F9F6F0",
+      "secondary": "#A89F91",
+      "inverse": "#0A0908"
+    },
+    "accent": {
+      "primary": "#D4AF37",
+      "secondary": "#B38B36",
+      "subtle": "rgba(212, 175, 55, 0.15)"
+    },
+    "forbidden": ["purple", "generic blue", "#7351B7", "teal gradients"]
+  },
+  "layouts": {
+    "general": "Generous spacing. Use py-24 or py-32 for section padding. Mobile-first responsive grids.",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "hero": "Full-screen cinematic hero (min-h-screen). Overlay: bg-gradient-to-t from-[#0A0908] via-[#0A0908]/40 to-black/20 to preserve image visibility while allowing text to pop. Keep text aligned left or center with high contrast.",
+    "navbar": "Crystal Glass pattern: sticky top-0 z-50 backdrop-blur-xl bg-[#0A0908]/70 border-b border-white/10. DO NOT use completely transparent backgrounds for navbar.",
+    "about_section": "Split-screen layout (grid cols-1 md:grid-cols-2). Text on one side with generous leading, image on the other with sharp or 4px radius edges.",
+    "bento_grid": "For Experience section. Grid cols-1 md:grid-cols-12 gap-6 or gap-8. Asymmetric span logic. No excessive border radius (max rounded-sm).",
+    "gallery": "Masonry layout (columns-1 md:columns-2 lg:columns-3 gap-6). Images break the grid vertically."
+  },
+  "components": {
+    "buttons": "Sharp corners (rounded-none) or very subtle (rounded-sm). 1px solid border in gold (#D4AF37) for outlined buttons, solid gold background (#D4AF37) with dark text for primary CTAs. Add hover transitions: bg-white text-black or scale up slightly.",
+    "cards": "Flat solid surfaces for Experience/Reviews. 1px subtle border (border-white/10). Background #171513. Soft ambient glow if needed, no heavy drop shadows.",
+    "inputs": "Shadcn based. Dark background (bg-transparent or bg-[#171513]), border-white/20, text-white, focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37].",
+    "menu": "List layout with generous vertical padding per item. Category filters as horizontal scrollable pills. Dotted leader line between item name and price, or right-aligned prices.",
+    "modals": "Lightbox for gallery and detailed view for signature dishes. Glassmorphism overlay."
+  },
+  "motion": {
+    "scroll": "Use Lenis for smooth momentum scrolling. It adds a premium feel.",
+    "reveals": "Use Framer Motion for staggered fade-up reveals on text and images as they enter viewport.",
+    "hover": "Image scale-up (scale-105) inside overflow-hidden containers. Slow transitions (duration-500)."
+  },
+  "images": {
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1531973968078-9bb02785f13d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBkYXJrJTIwbHV4dXJ5JTIwcmVzdGF1cmFudCUyMGludGVyaW9yfGVufDB8fHx8MTc4NzA1NjcwN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Dark luxury restaurant interior for hero background",
+        "category": "hero"
+      }
+    ],
+    "dishes": [
+      {
+        "url": "https://images.pexels.com/photos/34599571/pexels-photo-34599571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Mong Gyu Steak with Risotto",
+        "category": "menu_signature"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1588168333986-5078d3ae3976?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxmaW5lJTIwZGluaW5nJTIwc3RlYWslMjBwbGF0ZWR8ZW58MHx8fHwxNzg3MDU2NzA3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Bone Marrow / Seared meat dish",
+        "category": "menu_signature"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1778104682848-53a384124cbc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwcGxhdGVkJTIwYXBwZXRpemVyJTIwc291cHxlbnwwfHx8fDE3ODcwNTY3MDd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Kneecap Soup / Gourmet Soup",
+        "category": "menu_signature"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1726835498689-b4f6dbcdbdfb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBkYXJrJTIwbHV4dXJ5JTIwcmVzdGF1cmFudCUyMGludGVyaW9yfGVufDB8fHx8MTc4NzA1NjcwN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Interior bar area",
+        "category": "gallery"
+      },
+      {
+        "url": "https://images.pexels.com/photos/7518778/pexels-photo-7518778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Elegant leather stools and lighting",
+        "category": "gallery"
+      },
+      {
+        "url": "https://images.pexels.com/photos/880424/pexels-photo-880424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Cozy restaurant interior with wine glasses",
+        "category": "gallery"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXJrJTIwbHV4dXJ5JTIwcmVzdGF1cmFudCUyMGludGVyaW9yfGVufDB8fHx8MTc4NzA1NjcwN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Daytime interior view",
+        "category": "gallery"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build a single-page hybrid fullstack app matching the described sections.",
+    "Hero Section: Full-screen, title 'AYANCHIN DOWNTOWN — Modern Mongolian Dining in the Heart of Ulaanbaatar', 3 buttons, info row (4.2★ · 133 Reviews · Open Until 12 AM).",
+    "Navbar: Sticky glass navbar. Links: Home, Our Story, Menu, Gallery, Reviews, Location, Contact, plus Reserve a Table CTA.",
+    "About Section: Split-screen titled 'A Taste of Mongolia, Reimagined'.",
+    "Signature Dishes: Showcase 'Mong Gyu Steak with Risotto', 'Bone Marrow', 'Khuushuur', 'Kneecap Soup', 'Caesar Salad' with image cards.",
+    "Menu: Interactive filterable menu (All, Mongolian, Steak & Grill, Soups, Salads, Appetizers, Main Courses, Desserts, Drinks).",
+    "Experience Section: 'More Than a Meal' bento layout with cards for Authentic, Contemporary, Downtown, Late Evening.",
+    "Gallery: Masonry layout with a lightbox click-to-view feature.",
+    "Reviews: Display 4.2/5, 133 reviews in an elegant carousel or grid.",
+    "Reservation Form: Use Shadcn Form/Input components (name, phone, email, date, time, guests, special request) with validation.",
+    "Location: Embed a static map or map iframe pointing to Ulaanbaatar, include address details.",
+    "Mobile: Ensure a sticky bottom CTA for 'Reserve a Table' on mobile devices."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: transition: all. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx",
+    "All interactive and key informational elements MUST include a data-testid attribute to facilitate robust automated testing."
+  ],
+  "accessibility": {
+    "contrast": "Ensure all text meets WCAG AA standards. Text on images must have sufficient gradient overlay or drop shadow.",
+    "focus": "All interactive elements must have clear focus states, typically focus:ring-1 focus:ring-[#D4AF37] focus:ring-offset-2 focus:ring-offset-[#0A0908].",
+    "aria": "Use aria-labels for icon buttons and empty links."
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "Minimalist, thin stroke, matching the elegant serif aesthetic."
+  }
+}
